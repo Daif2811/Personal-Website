@@ -1,11 +1,22 @@
-﻿/*!
+
+
+
+
+
+
+
+
+
+
+
+/*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-:root {
+ :root {
     --blue:#007bff;
     --indigo:#6610f2;
     --purple:#6f42c1;
@@ -65,6 +76,9 @@ body {
 [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important;
 }
+
+
+
 
 hr {
     box-sizing: content-box;
@@ -10590,7 +10604,7 @@ section {
 
     .main h2 {
         color: #000;
-        font-size: 1.7vw;
+        font-size: 2.7vw;
         font-weight: 500;
     }
 
@@ -10598,23 +10612,24 @@ section {
         text-shadow: 1px 2px 5px blue;
     }
 
-    .main h2 span {
+    /* .main h2 span {
         color: #4e9eff;
-        font-size: 3em;
-        font-weight: 600;
+        font-size: 2em;
+        font-weight: 500;
         display: inline-block;
         margin-top: 10px;
         text-shadow: 1px 2px 5px black;
-    }
+    } */
 
     .main h3 {
-        color: #000;
-        font-size: 3vw;
-        font-weight: 700;
+        color: #4e2ef9;
+        font-size: 2.7vw;
+        font-weight: 500;
         letter-spacing: 1px;
         margin-top: 10px;
         margin-bottom: 30px;
-        text-shadow: 1px 2px 5px blue;
+        text-shadow: 1px 2px 5px black;
+        
     }
 
 .main-btn {
@@ -10673,6 +10688,7 @@ section {
 
     .card:hover {
         transform: scale(1.1);
+        text-decoration: none;
     }
 
 .icon {
@@ -10720,6 +10736,7 @@ section {
 
     .project-card:hover {
         transform: scale(1.1);
+        text-decoration: none;
     }
 
         .project-card:hover .project-image {
@@ -10733,33 +10750,42 @@ section {
 
 .project-info {
     padding: 1em;
+    text-align: center;
 }
 
 .project-category {
     font-size: 0.8em;
+    min-height: 5em;
     color: #000;
 }
 
 .project-title {
-    display: flex;
-    justify-content: space-between;
     text-transform: uppercase;
     font-weight: 800;
-    margin-top: 10px;
+    margin: 10px;
+   align-items: center;
 }
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #3a6cf4;
+    color: white;
+    padding: 5px;
+    transition: 1s ease;
 }
 
     .more-details:hover {
-        color: #601cfc;
+        text-decoration: none;
+        color: blue;
+        background-color: white;
+        transform: scale(1.1);
     }
 
 
 
-.about-me about-content {
+.about-me .about-content {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -10772,60 +10798,65 @@ section {
 .about-info {
     text-align: center;
     color: #0362c8;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     text-decoration-line: underline;
     text-decoration-color: #0362c8;
     font-weight: 700;
-    font-size:2.5vw;
+    font-size: 2.8vw;
 }
 
 .me {
     border-left: 5px solid blue;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid blue;
     padding-left: 2vw;
-    font-size: 1.7vw;
-    font-weight: 600;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    font-size: 1.5vw;
+    font-weight: 500;
     justify-content: center;
     font-style: italic;
     letter-spacing: 1px;
-    text-align:justify;
+    text-align: justify;
+    margin: 10px;
+    margin-bottom: 25px;
 }
 
-.me li {
-    font-size: 1.6vw;
-    font-weight: 600;
-}
+    .me li {
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
 
 
-.cards-contact{
-    background-color:aliceblue;
+.cards-contact {
+    background-color: aliceblue;
 }
 
-.contact{
-    justify-content:center;
+.contact {
+    justify-content: center;
 }
 
-.contact .icon {
-    color: #3a6cf4;
-    font-size: 8em;
-    text-align: center;
-}
+    .contact .icon {
+        color: #3a6cf4;
+        font-size: 8em;
+        text-align: center;
+    }
 
-.contact .info h3 {
-    color: #000;
-}
+    .contact .info h3 {
+        color: #000;
+    }
 
-.contact .info p {
-    font-size: 1.8vw;
-}
+    .contact .info p {
+        font-size: 1.8vw;
+    }
 
 
 
 
 
 .footer {
-    padding:10px 40px;
+    padding: 10px 40px;
     color: #fff;
-    
     display: flex;
     justify-content: space-between;
 }
@@ -10837,15 +10868,24 @@ section {
 
     .footer-title span {
         color: #fff;
-        text-shadow:1px 2px 6px blue;
+        text-shadow: 1px 2px 6px blue;
     }
 
 .footer .social-icons a {
-    float:right;
+    float: right;
     font-size: 1.8vw;
     padding-left: 2vw;
-    text-shadow:1px 2px 6px black;
+    text-shadow: 1px 2px 6px black;
 }
+
+
+
+
+
+
+
+
+
 
 /*@media (max-width:1023) {
     header {
