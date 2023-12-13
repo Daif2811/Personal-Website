@@ -15,72 +15,34 @@
 </head>
 <body>
 
-
-
-    <header class="navbar navbar-expand-sm bg-dark navbar-dark header" style="justify-content:space-between;">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">DAIF HAMDAN</a>
-    
-
-      
-
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-
-                <ul class="nav navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://flowcv.com/resume/br1hs4mrwi" download>Download CV</a>
-                    </li>
-                </ul>
-            </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active logo">DAIF HAMDAN</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="https://flowcv.com/resume/br1hs4mrwi" download>Download CV</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+       
 
 
     <section class="main">
         <div>
             <h2><strong>Hello, I'm Daif Hamdan</strong></h2>
-            <hr>
+          
             <h3>Full Stack .NET Developer<br /> Crafting Web Solutions</h3>
             <a href="#projects" class="main-btn">View my work</a>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/DaifHamdan" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Daif2811" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/DaifHamdan" target="_blank"><i class="icons fab fa-linkedin"></i></a>
+                <a href="https://github.com/Daif2811" target="_blank"><i class="icons fa-brands fa-github"></i></a>
                 <!-- <a href="https://www.facebook.com/profile.php?id=100041007430641" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 <!-- <a href="https://www.instagram.com/daifhamdan/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://youtube.com/@daifhamdan274" target="_blank"><i class="fab fa-youtube"></i></a> -->
-                <a href="https://wa.me/+201010164599" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:di.hamdan55@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/+201010164599" target="_blank"><i class="icons fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:di.hamdan55@gmail.com" target="_blank"><i class="icons fa-solid fa-envelope"></i></a>
               
             </div>
         </div>
@@ -89,8 +51,8 @@
 
 
     <section class=" row cards" id="services">
-        <h2 class="title col-md-12">Services</h2>
 
+        <h2 class="title col-md-12">Services</h2>
 
         <div class="content text-md-center row">
             <div class="card col-md-3">
@@ -139,12 +101,16 @@
                     <img src="../Images/Restaurant.png" />
                 </div>
                 <div class="project-info">
-                    <p class="project-category">An API application streamlining restaurant operations with features for table reservations and efficient food delivery services.</p>
+                    <p class="project-category">An API application streamlining restaurant operations with features 
+                        for table reservations and efficient food delivery services. 
+                    </p>  
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                       
                     <div class="project-title">
                         <strong>Restaurant App</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Restaurant-Application.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Restaurant-Application.git" class="more-details">Github Link</a>
                     </div>
                 </div>
             </div>
@@ -156,11 +122,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">A web application fostering connections and community through a dynamic, user-centric social network experience.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>Social Network App</strong>
                     </div>
                     <div>
-                         <a href="Https://github.com/Daif2811/Social-Networking-Application.git" class="more-details">More details</a>
+                         <a href="Https://github.com/Daif2811/Social-Networking-Application.git" class="more-details">Github Link</a>
                      </div>
                 </div>
             </div>
@@ -174,11 +142,13 @@
                  </div>
                  <div class="project-info">
                      <p class="project-category">A web application transforming online shopping with an intuitive and feature-rich e-commerce platform.</p>
-                   <div class="project-title">
+                     <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                   
+                     <div class="project-title">
                         <strong>E-Commerce App</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/BuyOnline.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/BuyOnline.git" class="more-details">Github Link</a>
                      </div>           
                  </div>
              </div>
@@ -189,12 +159,14 @@
                     <img src="../Images/store.jpg" />
                 </div>
                 <div class="project-info">
-                    <p class="project-category">A web application streamlining store management with efficient tools and seamless functionalities for optimal business operations.</p>
-                    <div class="project-title">
+                   
+                 <p class="project-category">A web application streamlining store management with efficient tools and seamless functionalities for optimal business operations.</p>      
+                 <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                 <div class="project-title">
                         <strong>Store Management App</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/StoreManagment.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/StoreManagment.git" class="more-details">Github Link</a>
                      </div>  
                 </div>
 
@@ -208,11 +180,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">A web application connecting job seekers and employers through a user-friendly employment platform with advanced matching and networking features.</p>
+                   
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
                     <div class="project-title">
                         <strong>Employment App</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Job-Opportunities.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Job-Opportunities.git" class="more-details">Github Link</a>
                      </div>  
                 </div>
             </div>
@@ -224,11 +198,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">A web application serving as the digital gateway to a university, providing information, resources, and interactive features for students, faculty, and staff.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>University App</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/University-Management.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/University-Management.git" class="more-details">Github Link</a>
                      </div>  
                 </div>
             </div>
@@ -241,11 +217,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">Portfolio website showcasing a curated collection of work, skills, and achievements for a comprehensive professional profile.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>Portfolio</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Personal-Website.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Personal-Website.git" class="more-details">Github Link</a>
                     </div>  
                 </div>
             </div>
@@ -257,11 +235,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">A landing page crafted with HTML, CSS, and JavaScript, seamlessly combining design and functionality for an engaging user experience.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>Landing Page</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Landing-Page.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Landing-Page.git" class="more-details">Github Link</a>
                     </div>  
                 </div>
             </div>
@@ -273,11 +253,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">A responsive web page built with HTML, CSS, and JavaScript, ensuring optimal user experience across various devices and screen sizes.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>Responsive Page</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Responsive-Page.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Responsive-Page.git" class="more-details">Github Link</a>
                     </div>  
                 </div>
             </div>
@@ -289,11 +271,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">An intuitive and feature-rich admin dashboard crafted with HTML, CSS, and JavaScript for seamless control and management of web applications.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>Admin Dashboard</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Admin-Dashboard.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Admin-Dashboard.git" class="more-details">Github Link</a>
                     </div>  
                 </div>
             </div>
@@ -305,11 +289,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">"An AI-powered image generator, seamlessly integrated into a web interface using HTML, CSS, and JavaScript, leveraging external APIs for dynamic image creation.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                   
                     <div class="project-title">
                         <strong>AI Images Generator</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/AI-Images-Generator.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/AI-Images-Generator.git" class="more-details">Github Link</a>
                     </div>  
                 </div>
             </div>
@@ -321,11 +307,13 @@
                 </div>
                 <div class="project-info">
                     <p class="project-category">A user-friendly drag-and-drop page created with HTML, CSS, and JavaScript, enhancing interactivity and ease of content manipulation.</p>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    
                     <div class="project-title">
                         <strong>Drag and Drop Page</strong>
                     </div>
                     <div>
-                        <a href="Https://github.com/Daif2811/Drag-and-Drop.git" class="more-details">More details</a>
+                        <a href="Https://github.com/Daif2811/Drag-and-Drop.git" class="more-details">Github Link</a>
                     </div>  
                 </div>
             </div>
@@ -337,7 +325,11 @@
 
         </div>
     </section>
+
+
     <!--=======================================================-->
+
+    
     <section>
         <div class="about-me row" id="about">
             <h2 class="title col-md-12">About Me</h2>
@@ -347,14 +339,13 @@
             <div class="col-md-6">
                 <h2 class="about-info">Information</h2>
                 <p class="me">
-                    Welcome to my profile. I'm a Full Stack .NET Developer with two years of professional experience
-                     in ASP.NET Core and MVC. I'm 26 years old, After trying many different fields, I finally found
+                    I'm a Full Stack .NET Developer with two years of professional experience
+                     in ASP.NET Core and MVC. I'm 26 years, After trying many different fields, I finally found
                       my passion which is writing code, which is why I decided to pursue it as a career
-                    I work in application development, whether it is back-end development, front-end development,
+                    I work in application development, whether it is back-end , front-end development,
                      or full-stack development, with many technologies used to build a responsive design application
                       with all screens and with clean code . Writing code is my passion and I'm always looking for
-                       ways to improve my skills and knowledge in this area. Right now, I'm seeking opportunities to 
-                       use my skills in a team environment and contribute to web development projects.
+                       ways to improve my skills and knowledge in this area. 
                 </p>
             </div>
 
@@ -363,7 +354,7 @@
                 <div class="me row">
 
                     
-                    <ul class="col-sm-6">
+                    <ul class="col-md-6">
                         <li>ASP.NET Core</li>
                         <li>ASP.NET MVC</li>
                         <li>RESTful APIs</li>
@@ -378,7 +369,7 @@
                         <li>Authorization</li>
                     </ul>
                     
-                    <ul class="col-sm-6">
+                    <ul class="col-md-6">
                         <li>Database</li>
                         <li>SQL Server</li>
                         <li>Database Design</li>
@@ -429,7 +420,7 @@
         </div>
     </section>
 
-    <footer class="footer bg-dark row">
+    <footer class="footer row">
         <i class="footer-title"><i class="fa-regular fa-copyright"></i> All Rights Reserved To <span>Daif Hamdan</span></i>
         <i class="social-icons">
             <a href="https://www.linkedin.com/in/DaifHamdan" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -443,6 +434,11 @@
 
         </i>
     </footer>
+
+
+
+
+<script src="Script.js"></script>
 
 
 
